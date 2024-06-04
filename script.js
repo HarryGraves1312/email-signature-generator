@@ -94,7 +94,7 @@ function generateSignature() {
                             <tbody>
                                 <tr><td height="30"></td></tr>
                                 <tr>
-                                    <td style="border-bottom: 1px solid rgb(238, 30, 45); width: 200px;"></td>
+                                    <td style="width: 562.5px; border-bottom: 1px solid rgb(238, 30, 45); border-left: none; display: block;"></td>
                                 </tr>
                                 <tr><td height="30"></td></tr>
                             </tbody>
