@@ -6,7 +6,7 @@ function generateSignature() {
     const email = document.getElementById('email').value;
 
     const signatureHTML = `
-        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Tahoma;">
+        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Tahoma; width: 100%;">
             <tbody>
                 <tr>
                     <td>
