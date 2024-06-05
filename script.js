@@ -120,6 +120,7 @@ function generateSignature() {
     `;
 
     document.getElementById('signaturePreview').innerHTML = signatureHTML;
+    document.getElementById('copyButton').style.display = 'inline'; // Prikazujemo dugme za kopiranje
 }
 
 function copySignature() {
