@@ -7,7 +7,7 @@ function generateSignature() {
     const address = document.getElementById('address').value;
 
     const signatureHTML = `
-        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Tahoma;">
+        <table cellpadding="0" cellspacing="0" style="vertical-align: -webkit-baseline-middle; font-size: large; font-family: Tahoma; background-color: transparent;">
             <tbody>
                 <tr>
                     <td>
@@ -127,6 +127,8 @@ function copySignature() {
     const signature = document.getElementById('signaturePreview').innerHTML;
     const tempElement = document.createElement('div');
     tempElement.innerHTML = signature;
+    tempElement.style.position = 'absolute';
+    tempElement.style.left = '-9999px';
     document.body.appendChild(tempElement);
 
     const range = document.createRange();
