@@ -24,15 +24,15 @@
             
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+
             <label for="address">Address:</label>
             <input type="text" id="address" name="address" required>
             
             <button type="button" onclick="generateSignature()">Generate Signature</button>
         </form>
         <div id="signaturePreview" class="signature-preview"></div>
-        <!-- Add the Copy Signature button here -->
-        <button type="button" onclick="copySignature()">Copy Signature</button>
+        <!-- Dodajemo Copy Signature dugme ovde -->
+        <button type="button" id="copyButton" onclick="copySignature()" style="display: none;">Copy Signature</button>
     </div>
     <script src="script.js"></script>
 </body>
