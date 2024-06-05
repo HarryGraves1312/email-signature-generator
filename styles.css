@@ -1,59 +1,70 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #EC1D1E;
-    margin: 0;
-    padding: 0;
+    background-color: #f2f2f2; /* Pozadinska boja stranice */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 .container {
-    background-color: #710A0A;
+    background-color: #fff; /* Pozadinska boja kontejnera */
     padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    width: 300px;
+    width: 400px; /* Širina kontejnera */
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    color: #333;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 22px); /* Širina input polja */
 }
 
 button {
-    width: 100%;
     padding: 10px;
-    background-color: #A90F0F;
+    background-color: #EE1E2D; /* Boja dugmeta */
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 button:hover {
-    background-color: #710A0A;
+    background-color: #cc1a26;
 }
 
 .signature-preview {
-    margin-top: 20px;
     padding: 10px;
     border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
+    background-color: #fff; /* Pozadinska boja pregleda potpisa */
+    overflow: auto; /* Sprečava izlaženje sadržaja iz okvira */
+    max-height: 300px; /* Maksimalna visina pregleda potpisa */
+}
+
+.signature-preview img {
+    max-width: 100%; /* Osigurava da slike ne izlaze iz pregleda */
 }
